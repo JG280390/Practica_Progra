@@ -58,6 +58,7 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
+        btn_cuentas = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -266,6 +267,13 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        btn_cuentas.setText("Cuentas.");
+        btn_cuentas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cuentasActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -287,7 +295,9 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(226, 226, 226))
+                .addGap(26, 26, 26)
+                .addComponent(btn_cuentas)
+                .addGap(127, 127, 127))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -311,8 +321,13 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
                                 .addGap(41, 41, 41)
                                 .addComponent(btn_Deposito))
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(btn_cuentas)))
                 .addContainerGap(300, Short.MAX_VALUE))
         );
 
@@ -366,6 +381,12 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
         
     }//GEN-LAST:event_formWindowActivated
 
+    private void btn_cuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cuentasActionPerformed
+        // TODO add your handling code here:
+        new FrmCuentas().setVisible(true);
+        FrmCuentas.setDefaultLookAndFeelDecorated(true);
+    }//GEN-LAST:event_btn_cuentasActionPerformed
+
    
    /* public static void main(String args[]) {
       
@@ -383,6 +404,7 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
     private javax.swing.JButton btn_Retiro;
     private javax.swing.JButton btn_Salir;
     private javax.swing.JButton btn_Ventadolares;
+    private javax.swing.JButton btn_cuentas;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;

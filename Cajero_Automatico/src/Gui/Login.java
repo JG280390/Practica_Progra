@@ -120,18 +120,37 @@ private void EntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
     usuarios[2] = "Mario";
     usuarios[3] = "Olman";
     usuarios[4] = "Yamileth";
-  
-        if (TxtUsuario.getText().equals("juan") && TxtPassword.getText().equals("123")) {
-         
+
+    if (TxtUsuario.getText().equals("Juan") && TxtPassword.getText().equals("123")) {
+
         new Pantalla_Inicio().setVisible(true);
-        Pantalla_Inicio.setDefaultLookAndFeelDecorated(true);
-    } else {
+        FrmCuentas.setDefaultLookAndFeelDecorated(true);
+        //new FrmCuentas().setVisible(true);
+        //Pantalla_Inicio.setDefaultLookAndFeelDecorated(true);
+    }
+    if(TxtUsuario.getText().equals("Maria") && TxtPassword.getText().equals("123")){
+         new Pantalla_Inicio().setVisible(true);
+        FrmCuentas.setDefaultLookAndFeelDecorated(true);
+    }if(TxtUsuario.getText().equals("Mario") && TxtPassword.getText().equals("123")){
+         new Pantalla_Inicio().setVisible(true);
+        FrmCuentas.setDefaultLookAndFeelDecorated(true);
+    }
+    if(TxtUsuario.getText().equals("Olman") && TxtPassword.getText().equals("123")){
+         new Pantalla_Inicio().setVisible(true);
+        FrmCuentas.setDefaultLookAndFeelDecorated(true);
+    }
+    if(TxtUsuario.getText().equals("Yamileth") && TxtPassword.getText().equals("123")){
+         new Pantalla_Inicio().setVisible(true);
+        FrmCuentas.setDefaultLookAndFeelDecorated(true);
+    }
+    
+    else {
 
         JOptionPane.showMessageDialog(this, "Nombre de Usuario y/o Contraseña incorrecto");
-    
-  
+
+
 }//GEN-LAST:event_EntrarActionPerformed
-}
+    }
 private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
     System.exit(0);
 }//GEN-LAST:event_SalirActionPerformed
