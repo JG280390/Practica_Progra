@@ -4,12 +4,20 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import Clases_Metodos.Cuenta;
 public class FrmCuentas extends javax.swing.JFrame {
-    
+    DefaultTableModel modelo =new DefaultTableModel();
     Cuenta obj= new Cuenta();
     
     public FrmCuentas() {
         initComponents();
         LlenarTabla();
+        modelo.addColumn("Cuenta");
+        modelo.addColumn("Beneficiario");
+        modelo.addColumn("Saldo");
+        modelo.addColumn("Password");
+        this.TablaClientes.setModel(modelo);
+    }
+    public void rellenartabla(){
+        
     }
     
     private  void LlenarTabla(){                
@@ -154,12 +162,17 @@ private void BtnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FI
         JOptionPane.showMessageDialog(this, "Falta Password");
     else {       
         obj.Crear(this.TxtCuenta.getText(), this.TxtNombre.getText(),  Integer.parseInt(this.TxtSaldo.getText()), this.TxtPassword.getText());
-
-        LlenarTabla();
-        this.TxtCuenta.setText("");
-        this.TxtNombre.setText("");
-        this.TxtSaldo.setText("");
-        this.TxtPassword.setText("");
+       
+        //LlenarTabla();
+        //this.TxtCuenta.setText("");
+        //this.TxtNombre.setText("");
+        //this.TxtSaldo.setText("");
+        //this.TxtPassword.setText("");
+        String[]agregar=new String[4];
+        agregar[0]=TxtCuenta.getText();
+        agregar[1]=TxtNombre.getText();
+        agregar[2]=TxtSaldo.getText();
+        agregar[3]=TxtPassword.getText();
     }
 }//GEN-LAST:event_BtnAgregarActionPerformed
 

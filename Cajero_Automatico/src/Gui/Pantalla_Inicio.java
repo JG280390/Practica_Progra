@@ -352,7 +352,7 @@ public class Pantalla_Inicio extends javax.swing.JFrame {
     private void btn_RetiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RetiroActionPerformed
         // TODO add your handling code here:
         Clase_Hija_Retiro reti = new Clase_Hija_Retiro();
-        reti.Retiro();
+        //reti.Retiro();
         reti.Transacciones();
      
     }//GEN-LAST:event_btn_RetiroActionPerformed

@@ -13,13 +13,13 @@ public class Cuenta {
 	String  NIP;        
     }
     
-    public void Prellenar(){
+   /* public void Prellenar(){
         cuenta[1]=new registro();    
         cuenta[1].Cuenta="admon";
         cuenta[1].Titular="Administrador";
         cuenta[1].Saldo=0;
         cuenta[1].NIP="admon";        
-    }
+    }*/
 	     
     public void Crear(String NoCuenta,String nombre,int saldo, String nip) {    
         cuenta[x]=new registro();    
@@ -32,7 +32,7 @@ public class Cuenta {
         x++;       
     }
 	
-    public void Abonar(String Nocuenta, int deposito) {            
+    /*public void Abonar(String Nocuenta, int deposito) {            
             for(int i=1;i<x;i++)    {                                       
                 if (Nocuenta.equals(cuenta[i].Cuenta))   {    
                     cuenta[i].Saldo=cuenta[i].Saldo+deposito;
@@ -76,5 +76,5 @@ public class Cuenta {
                 }        
             }    
 
-            }
+            }*/
 }
