@@ -16,7 +16,7 @@ public class Compra_Dolares extends Clase_Padre{
     @Override
     public void Transacciones() {
        // JOptionPane.showMessageDialog(null,"CUANTO DOLARES DESEA CAMBIAR");
-        int cantidad=Integer.parseInt(JOptionPane.showInputDialog(null,"Dijite la cantidad de dolares que desea Vender"));///esto para capturar datos
+        int cantidad=Integer.parseInt(JOptionPane.showInputDialog(null,"Dijite la cantidad de dolares que desea comprar"));///esto para capturar datos
         JOptionPane.showMessageDialog(null,"La cantidad apagarle por los dolares : " +cantidad*570);
     }
     

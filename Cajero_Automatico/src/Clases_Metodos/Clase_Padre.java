@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 public abstract class Clase_Padre {
 
     protected int transacciones, retiro, deposito, compra_dolares, venta_dolares;
-    private static int saldo;
+    static int saldo=10000;
     Scanner capturas = new Scanner(System.in);
 
     public void Menu()

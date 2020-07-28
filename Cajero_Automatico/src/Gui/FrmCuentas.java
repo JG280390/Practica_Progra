@@ -17,7 +17,7 @@ public class FrmCuentas extends javax.swing.JFrame {
         while(modelo.getRowCount()>0)modelo.removeRow(0);
         for(int i=2;i<=obj.x-1;i++) 
         {
-          //  modelo.addRow(new Object[]{obj.cuenta[i].Cuenta, obj.cuenta[i].Titular, obj.cuenta[i].Saldo,obj.cuenta[i].NIP});                           
+           // modelo.addRow(new Object[]{obj.cuenta[i].Cuenta, obj.cuenta[i].Titular, obj.cuenta[i].Saldo,obj.cuenta[i].NIP});                           
         }
     }
 

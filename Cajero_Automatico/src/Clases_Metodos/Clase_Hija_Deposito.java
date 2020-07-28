@@ -15,18 +15,11 @@ public class Clase_Hija_Deposito extends Clase_Padre{
     @Override
     public void Transacciones(){
         //System.out.println("CUANTO DESEAS DEPOSITAR");
-        JOptionPane.showMessageDialog(null,"CUANTO DESEAS DEPOSITAR");//linea 1 nueva
-        
-        this.Deposito();
-        transacciones =getSaldo();
-        setSaldo(transacciones + deposito);
-        /*System.out.println("********************************************");
-        System.out.println("DEPOSITASTE: " + deposito);
-        System.out.println("TU SALDO ACTUAL ES : " +getSaldo());
-        System.out.println("********************************************");
-        */
-        JOptionPane.showMessageDialog(null,"DEPOSITASTE: " + deposito);//linea 2 nueva
-        JOptionPane.showMessageDialog(null,"TU SALDO ACTUAL ES : " +getSaldo());//linea 3 nueva
+        //JOptionPane.showMessageDialog(null,"CUANTO DESEAS DEPOSITAR");//linea 1 nueva
+        //int saldo_actual=10000;
+        int ingreso=Integer.parseInt(JOptionPane.showInputDialog(null,"Dijite la cantidad del deposito"));
+        setSaldo(saldo+ingreso);
+       JOptionPane.showMessageDialog(null,"TU SALDO ACTUAL ES : " +getSaldo());
     }
     
 }
